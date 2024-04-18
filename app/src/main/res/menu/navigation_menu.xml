@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_matching"
+        android:icon="@drawable/ic_match"
+        android:title="@string/matching" />
+    <item
+        android:id="@+id/navigation_schedule"
+        android:icon="@drawable/ic_schedule"
+        android:title="@string/schedule" />
+    <item
+        android:id="@+id/navigation_provide_help"
+        android:icon="@drawable/ic_provide_help"
+        android:title="@string/provideHelp" />
+    <item
+        android:id="@+id/navigation_seek_help"
+        android:icon="@drawable/ic_seek_help"
+        android:title="@string/seekHelp" />
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/profile" />
+</menu>

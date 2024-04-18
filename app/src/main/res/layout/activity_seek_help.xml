@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SeekHelpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="150dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- TOP BAR TEMPLATE : COPY AND ONLY CHANGE ANDROID:TEXT -->
+            <RelativeLayout
+                android:id="@+id/seek_help_top_bar"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:paddingBottom="5dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/background_gradient">
+
+                <ImageView
+                    android:id="@+id/returnToHomePage"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/return_to_home_icon"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/seek_help_top_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/seekHelp"
+                    android:textStyle="bold"
+                    android:textSize="28sp"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/messagingIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_message"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:translationY="2dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/seek_help_requests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:padding="80dp"
+                android:layout_below="@id/seek_help_top_bar"
+                android:background="@drawable/profile_text_box">
+
+                <TextView
+                    android:id="@+id/noRequests_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/noRequests"
+                    android:textSize="26sp"
+                    android:padding="15dp"
+                    android:textColor="@color/black"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seek_help_requests"
+                android:id="@+id/requests_box"
+                android:padding="10dp"
+                android:layout_margin="20dp">
+
+                <RelativeLayout
+                android:id="@+id/request_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:background="@drawable/rectangle_purple">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/course"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/req1_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="50dp"
+                        android:layout_below="@id/req1_course"
+                        android:text=""
+                        android:textSize="14sp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/req1_course"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:textColor="@color/white" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_below="@id/req1_course"
+                        android:background="@android:color/transparent"/>
+
+                    <TextView
+                        android:id="@+id/req1_accept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/notAccepted"
+                        android:textSize="12sp"
+                        android:textColor="@color/light_gray"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/request_box2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/request_box"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:padding="10dp"
+                    android:background="@drawable/rectangle_purple">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/course"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/req2_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="50dp"
+                        android:layout_below="@id/req2_course"
+                        android:text=""
+                        android:textSize="14sp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/req2_course"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:textColor="@color/white" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_below="@id/req2_course"
+                        android:background="@android:color/transparent"/>
+
+                    <TextView
+                        android:id="@+id/req2_accept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/notAccepted"
+                        android:textSize="12sp"
+                        android:textColor="@color/light_gray"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/request_box3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/request_box2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:padding="10dp"
+                    android:background="@drawable/rectangle_purple">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/course"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/req3_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="50dp"
+                        android:layout_below="@id/req3_course"
+                        android:text=""
+                        android:textSize="14sp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/req3_course"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:textColor="@color/white" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_below="@id/req3_course"
+                        android:background="@android:color/transparent"/>
+
+                    <TextView
+                        android:id="@+id/req3_accept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/notAccepted"
+                        android:textSize="12sp"
+                        android:textColor="@color/light_gray"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@id/navigation"
+        android:text="@string/requestHelp"
+        android:id="@+id/requestHelpBtn"/>
+
+    <!--  Menu bar  -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation_menu" />
+
+</RelativeLayout>

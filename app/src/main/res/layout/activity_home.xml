@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="0dp">
+
+    <!-- Header with title and message icon -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:paddingBottom="16dp"
+        android:background="@drawable/background_gradient">
+
+        <TextView
+            android:id="@+id/tvHomePageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dp"
+            android:text="@string/homepage"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <ImageView
+            android:id="@+id/icMessageIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_message"
+            android:clickable="true"
+            android:focusable="true"
+            android:translationY="4dp"
+            android:translationX="-8dp"/>
+    </RelativeLayout>
+
+    <!-- Horizontal bar -->
+    <View
+        android:id="@+id/pages_home"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Icons -->
+            <include layout="@layout/dashboard_item" android:id="@+id/matching" />
+            <include layout="@layout/dashboard_item" android:id="@+id/schedule" />
+            <include layout="@layout/dashboard_item" android:id="@+id/provide_help" />
+            <include layout="@layout/dashboard_item" android:id="@+id/seek_help" />
+            <include layout="@layout/dashboard_item" android:id="@+id/profile" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

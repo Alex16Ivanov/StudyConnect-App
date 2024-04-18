@@ -1,0 +1,132 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cr8bfff6f6f6"
+    android:orientation="vertical"
+    android:paddingBottom="37dp"
+    android:layout_marginBottom="33dp"
+    android:layout_marginHorizontal="13dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <!-- Profile and Courses Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Empty Space -->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_gravity="bottom"/>
+
+            <!-- Profile Image, Name, and Courses -->
+            <LinearLayout
+                android:id="@+id/profileLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginHorizontal="12dp"
+                android:orientation="horizontal">
+
+                <include layout="@layout/profile_pic_view"
+                    android:id="@+id/profile_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="19dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="#666666"
+                    android:textSize="20sp"
+                    android:layout_marginStart="16dp" />
+
+                <LinearLayout
+                    android:id="@+id/rhi1dy24crl5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Major:" />
+
+                <LinearLayout
+                    android:id="@+id/rfxkclkjoywp"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sff979797sw1"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/major_view"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <!-- Empty Space -->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_gravity="bottom"/>
+
+            <!-- Matching Courses -->
+            <LinearLayout
+                android:id="@+id/coursesLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginHorizontal="14dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/list_matching_courses"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6" />
+
+                <TextView
+                    android:id="@+id/r0272obmib2s8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:text="Matching Courses" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Overlay layout -->
+        <include
+            layout="@layout/go_from_matching"
+            android:id="@+id/overlay_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawablePadding="16dp"
+    android:gravity="center_vertical"
+    android:padding="16dp"
+    android:textSize="20sp"
+    android:text="Element Text"
+    android:clickable="true"
+    app:drawableStartCompat="@drawable/ic_launcher_background" />

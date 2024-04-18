@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "603073118780",
+    "project_id": "studyconnect-g1",
+    "storage_bucket": "studyconnect-g1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603073118780:android:24a5803f11c17a228d3939",
+        "android_client_info": {
+          "package_name": "com.example.studyconnect_g1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUMAMvYYR40OjhRilQQnK_C1dLonWPljM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
